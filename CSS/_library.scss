@@ -1,0 +1,113 @@
+/* Variable Function */
+$colorWhite: #FFF;
+$colorGray: #dbdbdb;
+$colorBlack: #000;
+$colorPink: #ED58A0;
+$colorPurple: #403681;
+$colorMediumGray: #A9A9A9;
+$border5: 5px;
+$marginXY: 15px 15px;
+$marginX: 0px 15px;
+$marginB: 0px 0px 15px 0px;
+$marginBR: 0px 10px 10px 0px;
+$paddingY: 40px 0px;
+$paddingButton: 8px 14px;
+$paddingSquare: 10px 10px;
+
+/* Mixin Operators */
+@mixin gradienter {
+background: linear-gradient(to right, #403681, #EE6AA8);
+background: -webkit-linear-gradient(to right, #403681, #EE6AA8);
+background: -moz-linear-gradient(to right, #403681, #EE6AA8);
+background: -ms-linear-gradient(to right, #403681, #EE6AA8);
+background: -o-linear-gradient(to right, #403681, #EE6AA8);
+}
+@mixin largeText {
+font-size: 26px;
+font-weight: 800;
+display: inline-block;
+}
+@mixin smallText {
+font-size: 16px;
+font-weight: 500;
+display: inline-block;
+}
+@mixin infoText {
+font-size: 14px;
+font-weight: 500;
+display: inline-block;
+}
+@mixin superSmallText {
+font-size: 12px;
+font-weight: 500;
+display: inline-block;
+}
+@mixin buttonText {
+font-size: 12px;
+font-weight: 600;
+text-transform: uppercase;
+}
+@mixin maxWidth {
+width: 100%;
+display: block;
+float: none;
+}
+@mixin maxWidthNone {
+width: 100%;
+display: block;
+float: none;
+overflow: hidden;
+}
+@mixin widthLimiter {
+width:100%;
+display: block;
+max-width: 1000px;
+margin: 0 auto;
+float: none;
+}
+@mixin shadow {
+box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+-webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+-moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+-ms-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+-o-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+}
+@mixin lowShadow {
+box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+-webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+-moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+-ms-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+-o-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+}
+@mixin shadowPurple {
+box-shadow: 5px 5px 8px 1px rgba(64, 54, 129, 0.5);
+-webkit-box-shadow: 5px 5px 8px 1px rgba(64, 54, 129, 0.5);
+-moz-box-shadow: 5px 5px 8px 1px rgba(64, 54, 129, 0.5);
+-ms-box-shadow: 5px 5px 8px 1px rgba(64, 54, 129, 0.5);
+-o-box-shadow: 5px 5px 8px 1px rgba(64, 54, 129, 0.5);
+}
+@mixin elimination {
+margin: 0;
+padding: 0;
+outline: none;
+border: none;
+}
+@mixin split2 {
+width: 50%;
+float: left;
+}
+@mixin split3 {
+width: 33.3333333333%;
+float: left;
+}
+@mixin invisibility {
+opacity: 0.7;
+transition: 0.3s;
+}
+@mixin blurFilter {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    -ms-backdrop-filter: blur(4px);
+    -o-backdrop-filter: blur(4px);
+}

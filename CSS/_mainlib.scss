@@ -1,0 +1,46 @@
+html {
+scroll-behavior: smooth;
+body {
+margin: 0;
+padding: 0;
+background: #FFF;
+}
+}
+a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+font-family: 'FiraSans',sans-serif;
+color:#000;
+text-decoration: none;
+}
+ul, li, ol {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: FiraSans;
+    src: url(assets/FiraSans.ttf);
+}
+h1, h2, h3, h4, h5, h6 {
+margin:0;
+padding:0;
+font-weight: Bold;
+}
+h1 {
+font-size: 26px;
+}
+h2 {
+font-size: 24px;
+}
+h3 {
+font-size: 22px;
+}
+h4 {
+font-size: 20px;
+}
+h5 {
+font-size: 18px;
+}
+h6 {
+font-size: 16px;
+}

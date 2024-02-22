@@ -1,0 +1,554 @@
+/* Callback Sass Partial Files */
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  background: #FFF;
+}
+
+a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+  font-family: "FiraSans", sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+ul, li, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: FiraSans;
+  src: url(assets/FiraSans.ttf);
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: Bold;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+/* Variable Function */
+/* Mixin Operators */
+/* Sass Structure */
+/* Header Style Scss */
+header.outer {
+  width: 100%;
+  display: block;
+  float: none;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  -ms-backdrop-filter: blur(4px);
+  -o-backdrop-filter: blur(4px);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  max-height: 70px;
+}
+header.outer .limiter {
+  width: 100%;
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  float: none;
+}
+header.outer .limiter .headerFlex {
+  display: flex;
+  align-items: stretch;
+}
+header.outer .limiter .headerFlex .items1 {
+  flex-grow: 1;
+}
+header.outer .limiter .headerFlex .items1 img {
+  display: block;
+  height: 40px;
+  width: auto;
+  margin: 15px 15px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+header.outer .limiter .headerFlex .items2 {
+  flex-grow: 3;
+}
+header.outer .limiter .headerFlex .items2 nav {
+  margin: 25px 0px 0px 0px;
+}
+header.outer .limiter .headerFlex .items2 nav ul li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+header.outer .limiter .headerFlex .items2 nav ul li a {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFF;
+  background: #403681;
+  padding: 8px 14px;
+  border-radius: 5px;
+}
+header.outer .limiter .headerFlex .items2 nav ul li a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+header.outer .limiter .headerFlex .items3 {
+  flex-grow: 1;
+}
+header.outer .limiter .headerFlex .items3 form.search {
+  float: right;
+  margin: 17.5px 0px;
+}
+header.outer .limiter .headerFlex .items3 form.search input[type=text] {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  color: #FFF;
+  float: left;
+  background: #A9A9A9;
+  padding: 10px 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+header.outer .limiter .headerFlex .items3 form.search input[type=text]::-moz-placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  color: #FFF;
+}
+header.outer .limiter .headerFlex .items3 form.search input[type=text]::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  color: #FFF;
+}
+header.outer .limiter .headerFlex .items3 form.search button {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  float: left;
+  background: transparent;
+}
+header.outer .limiter .headerFlex .items3 form.search button i {
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  font-family: "FontAwesome";
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0;
+  background: #A9A9A9;
+  padding: 9.5px 10px;
+}
+header.outer .limiter .headerFlex .items3 form.search button i:hover {
+  cursor: pointer;
+  color: #FFF;
+  transition: 0.3s;
+}
+header.outer .limiter .headerFlex .items4 {
+  flex-grow: 1;
+}
+header.outer .limiter .headerFlex .items4 i {
+  font-size: 26px;
+  color: #403681;
+  font-family: "FontAwesome";
+  padding: 22px 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header.outer .limiter .headerFlex .items4 i:hover {
+  color: #000;
+  transition: 0.3s;
+}
+
+.header-suspension {
+  width: 100%;
+  display: block;
+  float: none;
+  overflow: hidden;
+  height: 70px;
+}
+
+/* Big Section Styleing */
+.bigBoxOuter {
+  width: 100%;
+  display: block;
+  float: none;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to right, #403681, #EE6AA8);
+  background: -o-linear-gradient(to right, #403681, #EE6AA8);
+  padding: 40px 0px;
+}
+.bigBoxOuter h2 {
+  font-size: 38px;
+  font-weight: Bold;
+  color: #FFF;
+  display: block;
+  margin: 0px 0px 15px 0px;
+  width: 320px;
+}
+.bigBoxOuter sub {
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  color: #dbdbdb;
+  display: block;
+  margin: 0px 0px 15px 0px;
+}
+.bigBoxOuter button {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 8px 1px rgba(64, 54, 129, 0.5);
+  -webkit-box-shadow: 5px 5px 8px 1px rgba(64, 54, 129, 0.5);
+  -moz-box-shadow: 5px 5px 8px 1px rgba(64, 54, 129, 0.5);
+  -ms-box-shadow: 5px 5px 8px 1px rgba(64, 54, 129, 0.5);
+  -o-box-shadow: 5px 5px 8px 1px rgba(64, 54, 129, 0.5);
+  color: #FFF;
+  background: #ED58A0;
+  padding: 8px 14px;
+  border-radius: 5px;
+  margin: 0px 10px 10px 0px;
+}
+.bigBoxOuter button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.splitBoxLimiter {
+  margin: 15px 15px;
+}
+.splitBoxLimiter .specialBox {
+  width: 100%;
+  display: block;
+  float: none;
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+}
+.splitBoxLimiter .specialBox img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.splitBoxLimiter .specialBox i {
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  z-index: 2;
+  color: #FFF;
+  background: #403681;
+  font-size: 25px;
+  padding: 10px 10px;
+  border-radius: 50%;
+  border: 2px solid #59ECFD;
+}
+.splitBoxLimiter .specialBox .fa-gear {
+  top: 10px;
+  right: 220px;
+}
+.splitBoxLimiter .specialBox .fa-cube {
+  top: 75px;
+  right: 245px;
+}
+.splitBoxLimiter .specialBox .fa-microchip {
+  top: 140px;
+  right: 245px;
+}
+.splitBoxLimiter .specialBox .fa-filter {
+  top: 200px;
+  right: 205px;
+}
+.splitBoxLimiter .specialBox .fa-bug {
+  top: 238px;
+  right: 135px;
+}
+
+.bigBoxLimiter {
+  width: 100%;
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  float: none;
+}
+
+.bigBoxSplit {
+  width: 50%;
+  float: left;
+}
+
+/* Basic Main Box Styleing */
+.basicOuter {
+  width: 100%;
+  display: block;
+  float: none;
+  padding: 40px 0px;
+  text-align: center;
+}
+.basicOuter .basicLimiter {
+  width: 100%;
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  float: none;
+}
+.basicOuter .basicLimiter h3 {
+  font-size: 26px;
+  font-weight: 800;
+  display: inline-block;
+  margin: 0px 0px 8px 0px;
+  width: 100%;
+  color: #403681;
+}
+.basicOuter .basicLimiter strong {
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  margin: 0 auto;
+  display: block;
+  width: 500px;
+  color: #A9A9A9;
+  padding: 0px 0px 20px 0px;
+}
+.basicOuter .basicLimiter .basicFlex {
+  display: flex;
+}
+.basicOuter .basicLimiter .basicFlex .basic1 {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  padding: 20px 15px;
+  background: #FFF;
+  margin: 15px 15px;
+  flex: 1;
+  height: auto;
+}
+.basicOuter .basicLimiter .basicFlex .basic2 {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  padding: 20px 15px;
+  background: #FFF;
+  margin: 15px 15px;
+  flex: 1;
+  height: auto;
+}
+.basicOuter .basicLimiter .basicFlex .basic3 {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  padding: 20px 15px;
+  background: #FFF;
+  margin: 15px 15px;
+  flex: 1;
+  height: auto;
+}
+.basicOuter .basicLimiter .basicFlex h4 {
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  color: #403681;
+  display: block;
+  margin: 15px 15px;
+}
+.basicOuter .basicLimiter .basicFlex span {
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  color: #A9A9A9;
+}
+.basicOuter .basicLimiter .basicFlex i {
+  background: linear-gradient(to right, #403681, #EE6AA8);
+  background: -o-linear-gradient(to right, #403681, #EE6AA8);
+  width: 100px;
+  padding: 30px 0px;
+  color: #FFF;
+  display: block;
+  overflow: hidden;
+  font-size: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+/* Brands Styleing */
+.brandsOuter {
+  width: 100%;
+  display: block;
+  float: none;
+  overflow: hidden;
+  background: linear-gradient(to right, #403681, #EE6AA8);
+  background: -o-linear-gradient(to right, #403681, #EE6AA8);
+  text-align: center;
+  padding: 40px 0px;
+}
+.brandsOuter .brandsLimiter {
+  width: 100%;
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  float: none;
+}
+.brandsOuter .brandsLimit {
+  width: 60%;
+  margin: 0 auto;
+}
+.brandsOuter h3 {
+  font-size: 26px;
+  font-weight: 800;
+  display: inline-block;
+  color: #FFF;
+  display: block;
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+}
+.brandsOuter strong {
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  color: #A9A9A9;
+  margin: 0px 0px 10px 0px;
+}
+.brandsOuter span {
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  color: #FFF;
+}
+
+/* Skill Box Styleing */
+.skillOuter {
+  width: 100%;
+  display: block;
+  float: none;
+  overflow: hidden;
+}
+.skillOuter .skillLimiter {
+  width: 100%;
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  float: none;
+  text-align: center;
+}
+.skillOuter .skillLimiter h3 {
+  font-size: 26px;
+  font-weight: 800;
+  display: inline-block;
+  color: #403681;
+  display: block;
+  width: 100%;
+  margin: 20px 0px;
+}
+.skillOuter .skillLimiter .skillBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skillOuter .skillLimiter .skillBox .itemSkill {
+  width: 33.33%;
+}
+.skillOuter .skillLimiter .skillBox .itemSkill .nrd {
+  margin: 8px 8px;
+  display: block;
+  background: #403681;
+  padding: 10px 12px;
+  border-radius: 5px;
+  float: none;
+  overflow: hidden;
+}
+.skillOuter .skillLimiter .skillBox .itemSkill .nrd img {
+  width: 30px;
+  height: 30px;
+  float: left;
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 0px 10px 0px 0px;
+}
+.skillOuter .skillLimiter .skillBox .itemSkill .nrd a {
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  color: #FFF;
+  font-weight: 700;
+  float: left;
+  margin: 6px 0px;
+}
+
+/* Footer Styleing */
+footer.footers {
+  width: 100%;
+  display: block;
+  float: none;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+  background: #FFF;
+  margin: 40px 0px 0px 0px;
+  padding: 20px 0px;
+}
+footer.footers .footerLimiter {
+  width: 100%;
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  float: none;
+}/*# sourceMappingURL=style.css.map */

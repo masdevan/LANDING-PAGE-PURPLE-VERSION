@@ -1,0 +1,361 @@
+/* Callback Sass Partial Files */
+@import 'mainlib.scss';
+@import 'library.scss';
+@import 'animation.scss';
+/* Sass Structure */
+
+/* Header Style Scss */
+header.outer {
+@include maxWidth;
+@include shadow;
+@include blurFilter;
+position: fixed;
+z-index: 100;
+top: 0;
+left: 0;
+background: rgba(255, 255, 255, 0.7);
+max-height: 70px;
+.limiter {
+@include widthLimiter;
+.headerFlex {
+display: flex;
+align-items: stretch;
+.items1 {
+flex-grow: 1;
+img {
+display: block;
+height: 40px;
+width: auto;
+margin: 15px 15px;
+object-fit: fill;
+}
+}
+.items2 {
+flex-grow: 3;
+nav {
+margin: 25px 0px 0px 0px;
+ul {
+li {
+display: inline-block;
+margin: 0px 5px;
+a {
+@include buttonText;
+color: $colorWhite;
+background: $colorPurple;
+padding: $paddingButton;
+border-radius: $border5;
+&:hover {
+@include invisibility;
+}
+}
+}
+}
+}
+}
+.items3 {
+flex-grow: 1;
+form.search {
+float:right;
+margin: 17.5px 0px;
+input[type=text] {
+@include elimination;
+color:#FFF;
+float: left;
+background: $colorMediumGray;
+padding: 10px 20px;
+border-top-left-radius: $border5;
+border-bottom-left-radius: $border5;
+&::placeholder {
+@include superSmallText;
+color: #FFF;
+}
+}
+button {
+@include elimination;
+float: left;
+background: transparent;
+i {
+@include smallText;
+font-family: 'FontAwesome';
+border-top-right-radius: $border5;
+border-bottom-right-radius: $border5;
+margin: 0;
+background: $colorMediumGray;
+padding: 9.5px 10px;
+&:hover {
+cursor: pointer;
+color: $colorWhite;
+transition: 0.3s;
+}
+}
+}
+}
+}
+.items4 {
+flex-grow: 1;
+i {
+font-size: 26px;
+color: $colorPurple;
+font-family: 'FontAwesome';
+padding: 22px 22px;
+cursor: pointer;
+transition: 0.3s;
+&:hover {
+color: $colorBlack;
+transition: 0.3s;
+}
+}
+}
+}
+}
+}
+.header-suspension {
+@include maxWidthNone;
+height: 70px;
+}
+/* Big Section Styleing */
+.bigBoxOuter {
+@include maxWidthNone;
+@include shadow;
+@include gradienter;
+padding: $paddingY;
+h2 {
+font-size: 38px;
+font-weight: Bold;
+color: $colorWhite;
+display: block;
+margin: $marginB;
+width:320px;
+}
+sub {
+@include smallText;
+color: $colorGray;
+display: block;
+margin: $marginB;
+}
+button {
+@include elimination;
+@include buttonText;
+@include shadowPurple;
+color: $colorWhite;
+background: $colorPink;
+padding: $paddingButton;
+border-radius: $border5;
+margin: $marginBR;
+&:hover {
+cursor: pointer;
+@include invisibility;
+}
+}
+}
+.splitBoxLimiter {
+margin: $marginXY;
+.specialBox {
+@include maxWidthNone;
+height:300px;
+position: relative;
+img {
+    width:200px;
+    height:200px;
+    object-fit: fill;
+    position: absolute;
+    top:15px;
+    right: 15px;
+}
+i {
+@include shadow;
+position: absolute;
+z-index: 2;
+color: $colorWhite;
+background: $colorPurple;
+font-size: 25px;
+padding: $paddingSquare;
+border-radius: 50%;
+border: 2px solid #59ECFD;
+}
+.fa-gear {
+top:10px;
+right:220px;
+}
+.fa-cube {
+top:75px;
+right:245px;
+}
+.fa-microchip {
+top:140px;
+right:245px;
+}
+.fa-filter {
+top:200px;
+right:205px;
+}
+.fa-bug {
+top:238px;
+right:135px;
+}
+}
+}
+.bigBoxLimiter {
+@include widthLimiter;
+}
+.bigBoxSplit {
+@include split2;
+}
+/* Basic Main Box Styleing */
+.basicOuter {
+@include maxWidth;
+padding: $paddingY;
+text-align: center;
+.basicLimiter {
+@include widthLimiter;
+h3 {
+@include largeText;
+margin: 0px 0px 8px 0px;
+width: 100%;
+color: $colorPurple;
+}
+strong {
+@include infoText;
+margin: 0 auto;
+display: block;
+width: 500px;
+color: $colorMediumGray;
+padding: 0px 0px 20px 0px;
+}
+.basicFlex {
+display: flex;
+.basic1 {
+@include lowShadow;
+padding: 20px 15px;
+background: $colorWhite;
+margin: $marginXY;
+flex:1;
+height:auto;
+}
+.basic2 {
+@include lowShadow;
+padding: 20px 15px;
+background: $colorWhite;
+margin: $marginXY;
+flex:1;
+height:auto;
+}
+.basic3 {
+@include lowShadow;
+padding: 20px 15px;
+background: $colorWhite;
+margin: $marginXY;
+flex:1;
+height:auto;
+}
+h4 {
+@include smallText;
+color: $colorPurple;
+display: block;
+margin: $marginXY;
+}
+span {
+@include infoText;
+color: $colorMediumGray;
+}
+i {
+@include gradienter;
+width:100px;
+padding: 30px 0px;
+color: $colorWhite;
+display: block;
+overflow: hidden;
+font-size: 40px;
+margin: 0 auto;
+border-radius: 50%;
+}
+}
+}
+}
+/* Brands Styleing */
+.brandsOuter {
+@include maxWidthNone;
+@include gradienter;
+text-align: center;
+padding: $paddingY;
+.brandsLimiter {
+@include widthLimiter;
+}
+.brandsLimit {
+width:60%;
+margin: 0 auto;
+}
+h3 {
+@include largeText;
+color: $colorWhite;
+display: block;
+width: 100%;
+margin: 0px 0px 20px 0px;
+}
+strong {
+@include smallText;
+color: $colorMediumGray;
+margin: 0px 0px 10px 0px;
+}
+span {
+@include smallText;
+color: $colorWhite;
+}
+}
+/* Skill Box Styleing */
+.skillOuter {
+@include maxWidthNone;
+.skillLimiter {
+@include widthLimiter;
+text-align: center;
+h3 {
+@include largeText;
+color: $colorPurple;
+display: block;
+width: 100%;
+margin: 20px 0px;
+}
+.skillBox {
+display: flex;
+flex-wrap: wrap;
+.itemSkill {
+width: 33.33%;
+.nrd {
+margin: 8px 8px;
+display: block;
+background: $colorPurple;
+padding: 10px 12px;
+border-radius: $border5;
+float:none;
+overflow: hidden;
+img {
+width: 30px;
+height: 30px;
+float:left;
+overflow: hidden;
+border-radius: $border5;
+margin: 0px 10px 0px 0px;
+}
+a {
+@include smallText;
+color: $colorWhite;
+font-weight: 700;
+float: left;
+margin: 6px 0px;
+}
+}
+}
+}
+}
+}
+/* Footer Styleing */
+footer.footers {
+@include maxWidthNone;
+@include shadow;
+background: $colorWhite;
+margin: 40px 0px 0px 0px;
+padding: 20px 0px;
+.footerLimiter {
+@include widthLimiter;
+}
+}
